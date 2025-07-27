@@ -1,0 +1,53 @@
+:root{
+  --main-color:#0ef;
+  --second-color:#fff;
+}
+body {
+  background-color: #250821;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+header {
+  display: flex;justify-content: space-between;
+  height: 60px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 30%);
+  align-items: center;
+  padding: 10px 50px;
+  z-index: 99;
+  position: fixed;
+}
+.logo{
+color: var(--second-color);
+text-transform: uppercase;
+font-size: 1.5rem;
+font-weight: 700;
+}
+.logo span,.navigation a:hover,.navigation a.active{
+  color: var(--main-color);
+  text-shadow: 0 0 10px var(--main-color),0 0 20px var(--main-color);
+}
+.navigation a {
+  color: var(--second-color);
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  margin: 10px;
+  transition: .3s;
+  position: relative;
+}
+.navigation a::before{
+  content:"";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: -5px;
+  background-color: var(--main-color);
+}
+.navigation a:hover::before,.navigation a.active::before{
+  width: 100%;
+}
