@@ -1,0 +1,36 @@
+@media(max-width:767px){
+  header {
+    padding:10px 10px;
+  }
+  .navigation {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding:  150px 150px 700px;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 30%);
+    backdrop-filter: blur(30px);
+  }
+  .navigation a {
+    margin-bottom: 50px;
+    font-size: 2rem;
+    animation:none;
+    opacity: 1;
+  }
+  .navigation.close {
+    display: flex;
+  }
+  .menuBar {
+    display: block;
+  }
+  .menuBar.open .fa-bars {
+    opacity: 0;
+  }
+  .menuBar.open .fa-xmark {
+    opacity: 1;
+  }
+}

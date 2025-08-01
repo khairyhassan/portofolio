@@ -48,6 +48,30 @@ font-weight: 700;
   bottom: -5px;
   background-color: var(--main-color);
 }
-.navigation a:hover::before,.navigation a.active::before{
+.navigation a:hover::before,
+.navigation a.active::before{
   width: 100%;
+}
+.menuBar {
+  display: none;
+  color: var(--second-color);
+  position: relative;
+  width: 40px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.menuBar i {
+  font-size: 1.8rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  transition: opacity .3s ease;
+}
+.menuBar .fa-bars{
+  opacity: 1;
+}
+.menuBar .fa-xmark{
+  opacity: 0;
 }
