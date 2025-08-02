@@ -46,4 +46,35 @@ var typed = new Typed('.text-type', {
       loop: true,
       backSpeed: 150,
       cursorChar: '-',
-    });
+});
+//theme switcher
+const themeBtn = document.querySelector('.navigation i');
+themeBtn.onclick = () => document.querySelector('.changeColor').classList.toggle('themeToggle');
+
+function themeColor(color) {
+  document.documentElement.style.setProperty('--main-color', color);
+  localStorage.setItem('theme',color)
+}
+if (localStorage.getItem) {
+  document.documentElement.style.setProperty('--main-color', localStorage.getItem('theme'));
+}
+//counter
+// for (let i = 0; i <= 10; i++){
+//   setTimeout(() => {
+//     document.querySelector('.experience h2').textContent='+'+i
+//   },i*250);
+// }
+function counter(end, selector, duration) {
+  let countElement = document.querySelector(selector)
+  for (let i = 0; i <= end; i++){
+     setTimeout(() => {
+    countElement.textContent='+'+i
+  },i*duration);
+  }
+}
+//for delay counter's appearance
+setTimeout(() => {
+  counter(3, '.experience h2', 200);
+  counter(7, '.Skills h2', 200);
+  counter(35, '.Projects h2', 100);
+},2000)

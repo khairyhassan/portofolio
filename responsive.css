@@ -49,5 +49,7 @@
  html {
   font-size: 12px;
  }
-  
+.counter{
+  bottom: unset;
+}
 }

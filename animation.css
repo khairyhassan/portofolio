@@ -77,3 +77,54 @@
     transform: translateY(0px);
   }
 }
+/* counter */
+.counter>*{
+  position: relative;
+  bottom: 60px;
+  animation: counter 1s forwards ;
+}
+@keyframes counter {
+  to{
+    bottom: 0;
+  }
+}
+/* about section */
+#about h2 {
+  animation: about-me 3s forwards ;
+  animation-timeline: view();
+  animation-range: 0 30%;
+}
+@keyframes about-me {
+  0%{
+    transform: scale(0);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+.about-pic img {
+  animation: about-pic  forwards;
+  animation-timeline: view();
+  animation-range: 0 30%;
+}
+@keyframes about-pic {
+  0%{
+    transform: translateY(250px) scale(0);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+.about-content p span{
+  animation:3s about-content  linear   forwards;
+  animation-timeline: view();
+  animation-range: 15% 26%;
+}
+@keyframes about-content {
+  to{
+    background-size: 100%;
+  }
+  
+}

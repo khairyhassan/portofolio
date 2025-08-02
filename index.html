@@ -19,12 +19,21 @@
       <a href="#about">About</a>
       <a href="#services">Services</a>
       <a href="#contact">Contact</a>
+      <i class="fa-solid fa-gear"></i>
     </nav>
     <div class="menuBar">
       <i class="fa-solid fa-bars"></i>
       <i class="fa-solid fa-xmark"></i>
     </div>
   </header>
+  <ul class="changeColor">
+    <li onclick="themeColor('#f44336')"></li>
+    <li onclick="themeColor('#9c27b0')"></li>
+    <li onclick="themeColor('#0ef')"></li>
+    <li onclick="themeColor('#65f207')"></li>
+    <li onclick="themeColor('#ff9800')"></li>
+    <input oninput="themeColor(this.value)" type="color">
+  </ul>
   <!-- home section -->
   <section id="home">
     <div id="" class="home-pic">
@@ -50,7 +59,37 @@
         </div>
     </div>
   </section>
-  
+  <div class="counter">
+    <div class="experience">
+      <h2>0</h2>
+      <p>Experience</p>
+    </div>
+    <div class="Skills">
+      <h2>0</h2>
+      <p>Skills</p>
+    </div>
+    <div class="Projects">
+      <h2>0</h2>
+      <p>Projects</p>
+    </div>
+  </div>
+  <section id="about">
+    <h2>About <span class="me">me</span></h2>
+    <div class="about-pic">
+      <img src="./assets/IMG20230624163047.png" alt="" width="400px">
+    </div>
+    <div class="about-content">
+      <p><span>
+      "I’m a Frontend Developer and UI/UX Designer with a strong passion
+       for creating visually appealing and user-centered digital experiences.
+       I specialize in turning complex ideas into clean, functional, 
+       and responsive interfaces. With a deep understanding of design principles
+       and modern frontend technologies, I strive to bridge the gap between design
+       and development — delivering products that are not only beautiful 
+       but also intuitive and accessible."
+      </span></p>
+    </div>
+  </section>
    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <script src="portofolio.js"></script>
 </body>
