@@ -44,3 +44,36 @@
 .navigation a:nth-child(4){
   animation-delay: 0.9s;
 }
+/* home-section */
+.home-pic img{
+  opacity: 0;
+  animation: pic 2s ease-in-out 1s forwards ;
+}
+@keyframes pic {
+  0%{
+    opacity: 0;
+    transform: scale(.5)rotate(-50deg);
+  }
+  50%{
+    transform: scale(1.1);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1)rotate(0deg);
+  }
+}
+.home-content>*{
+  opacity: 0;
+  animation: home-cont 2s ease-in-out   forwards ;
+  animation-delay: calc(.2s*var(--i));
+}
+@keyframes home-cont {
+  0%{
+    opacity: 0;
+    transform: translateY(250px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

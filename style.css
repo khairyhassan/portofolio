@@ -75,3 +75,79 @@ font-weight: 700;
 .menuBar .fa-xmark{
   opacity: 0;
 }
+/* home section */
+#home {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  flex-direction: row-reverse;
+  padding: 10%;
+  overflow: hidden;
+  
+}
+.home-pic {
+  margin-top: 5%;
+}
+.home-pic img {
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--main-color),
+              0 0 20px var(--main-color),
+              0 0 40px var(--main-color),
+              0 0 80px var(--main-color);
+}
+.home-content {
+  margin-right: 5%;
+}
+.home-content h2{
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: var(--second-color);
+  padding: 1.3rem 0;
+}
+.home-content span {
+  color: var(--main-color);
+}
+.home-content p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 1.3px;
+  margin-top: 1.2rem;
+  color: var(--second-color);
+}
+.social-icons {
+  
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.social-icons i {
+  color: var(--main-color);
+  font-size: 2rem;
+  transition: .2s ;
+}
+.social-icons i:hover {
+  scale: 1.2;
+  text-shadow:0 0 10px var(--main-color);
+}
+button{
+  border: 2px solid var(--main-color);
+  padding: 10px 40px;
+  color: var(--second-color);
+  background: transparent;
+  border-radius: 10%;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 5px;
+  transition: .35s;
+}
+button:hover {
+  scale: 1.03;
+  box-shadow: 0 0 10px var(--main-color),
+              0 0 20px var(--main-color),
+              0 0 40px var(--main-color),
+              0 0 80px var(--main-color);
+  background-color: var(--main-color);
+  cursor: pointer;
+}

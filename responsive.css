@@ -33,4 +33,21 @@
   .menuBar.open .fa-xmark {
     opacity: 1;
   }
+  /* home section */
+  #home {
+    flex-direction: column;
+    overflow: auto;
+  }
+  .home-pic img {
+    margin-top: 50px;
+    height: 250px;
+    width: 250px;
+  }
+  .social-icons {
+    justify-content: center;
+  }
+ html {
+  font-size: 12px;
+ }
+  
 }
