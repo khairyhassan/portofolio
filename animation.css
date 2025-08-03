@@ -44,6 +44,9 @@
 .navigation a:nth-child(4){
   animation-delay: 0.9s;
 }
+.navigation a:nth-child(5){
+  animation-delay: 1.2s;
+}
 /* home-section */
 .home-pic img{
   opacity: 0;
@@ -126,5 +129,58 @@
   to{
     background-size: 100%;
   }
-  
+}
+/* skills section */
+#skills h2 {
+  animation: skills 3s forwards ;
+  animation-timeline: view();
+  animation-range: 0 26%;
+}
+@keyframes skills {
+  0%{
+    transform: scale(0);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+.skillFill {
+  animation: skillBar  forwards;
+  animation-timeline: view();
+  animation-range: 0 26%;
+}
+@keyframes skillBar {
+  to{
+    width: var(--b);
+  }
+}
+/* services section */
+#services h2 {
+  animation: services 3s forwards ;
+  animation-timeline: view();
+  animation-range: 0 26%;
+}
+@keyframes services {
+  0%{
+    transform: scale(0);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+.card {
+  animation: card  forwards ;
+  animation-timeline: view();
+  animation-range:20% 30%;
+  scale: 0;
+}
+@keyframes card {
+  0%{
+    scale: 0;
+    rotate: 0;
+  }
+  100%{
+    scale: 1;
+    rotate: 360deg;
+  }
 }

@@ -253,3 +253,88 @@ button:hover {
   background-size: 0;
   background-repeat: no-repeat;
 }
+/* skills section */
+#skills{
+  height: 100vh;
+  padding: 60px;
+}
+.skillsContainer {
+  padding: 0 15%;
+  height: 80%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.head-skills {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--second-color);
+  margin: 50px;
+}
+.head-skills span {
+  color: var(--main-color);
+}
+.skillBar {
+  width: 100%;
+  height: 20px;
+  margin-bottom: 40px;
+  background-color: #222;
+  border-radius: 15px;
+}
+.skillFill {
+  width: 0%;
+  height: 20px;
+  background-color: var(--main-color);
+  border-radius: 15px;
+  text-align: right;
+}
+.skillFill span {
+  padding-right: 10px;
+  font-size: 1.3rem;
+}
+.skillName {
+  position: relative;
+  top: -50px;
+  margin-left: 10px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--main-color);
+}
+/* services section */
+#services {
+  height: 100vh;
+  background-color: #222;
+  padding: 60px 0;
+}
+.servicesContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  width: 250px;
+  height: 270px;
+  background-color: var(--main-color);
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 20px;
+  transition: .3s;
+}
+.card i {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+.card h2 {
+  margin-bottom: 20px;
+}
+.card p {
+  font-size: 1.1rem;
+}
+.card:hover {
+  background-color: transparent;
+  color: var(--main-color);
+  border: 2px solid var(--main-color);
+  transform: scale(1.05);
+}
