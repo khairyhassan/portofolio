@@ -77,4 +77,16 @@ setTimeout(() => {
   counter(3, '.experience h2', 200);
   counter(7, '.Skills h2', 200);
   counter(35, '.Projects h2', 100);
-},2000)
+}, 2000)
+
+
+// project filter
+let filterbtns = document.querySelectorAll('.btn');
+for (let i = 0; i < filterbtns.length; i++){
+  filterbtns[i].addEventListener('click', function(){
+    filterbtns.forEach((e) => {
+      e.classList.remove('active')
+    })
+    this.classList.add('active')
+  })
+}
