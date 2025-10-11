@@ -52,4 +52,29 @@
 .counter{
   bottom: unset;
 }
+/* services section */
+.servicesContainer{
+   flex-direction: column;
+    /* overflow: auto; */
+}
+.servicesContainer .card{
+   width: 150px;
+   height: 150px;
+   margin: 10px;
+   padding: 10px;
+}
+.card i {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+.card h2 {
+  margin-bottom: 10px;
+}
+.card p {
+  font-size:.5rem;
+}
+/* projects section */
+.project-card {
+  margin: 30px;
+}
 }
